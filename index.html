@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ketwords" content="Gerador de Senhas" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerador de Senha</title>
+  </head>
+  <body>
+    <img class="logo" src="./assets/logo.png" alt="Gerador de Senhas" />
+
+    <main class="container-input">
+      <span>Tamanho <span id="valor"> </span> Caracteres</span>
+      <input
+        id="slider"
+        class="slider"
+        type="range"
+        min="8"
+        max="15"
+        value="10"
+      />
+
+      <button id="button" class="button-cta" onclick="generatePassword()">
+        Gerar Senha
+      </button>
+    </main>
+
+    <div
+      id="container-password"
+      onclick="copyPassword()"
+      class="container-password hide"
+    >
+      <span class="title">A senha gerada é: </span>
+      <span id="password" class="password">12345678</span>
+      <span class="tootip">Clique na Senha Para Copiar. ☝🏻 </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

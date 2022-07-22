@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 41, 59);
+  width: 100%;
+  height: 100vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*background-image: url(./assets/hk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;*/
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 24px; /*margem embaixo*/
+}
+
+.container-input {
+  max-width: 480px;
+  margin: 14px 0; /*14 em cima embaixo e 0 nas laterais*/
+}
+
+.container-input span {
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 18px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  outline: none;
+  margin-top: 8px;
+  transition: transform 0.5s;
+}
+
+.button-cta {
+  height: 30px;
+  background: rgb(14, 129, 179);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: rgb(255, 246, 246);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.button-cta:hover {
+  transform: scale(1.05);
+}
+
+.container-password {
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  font-size: 25px;
+  border: 1px solid rgb(39, 143, 212);
+  transition: transform 0.5s;
+}
+
+.password:hover {
+  transform: scale(1.05);
+}
+
+.tootip {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(12, 12, 12);
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+.container-password:hover .tootip {
+  visibility: visible;
+}
